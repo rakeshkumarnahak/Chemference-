@@ -1,0 +1,90 @@
+/* KeynoteSpeaker styling */
+.keynoteSpeaker {
+  text-align: center;
+  width: 80%;
+  margin: 12rem auto;
+}
+
+.keynoteSpeakerContainer {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.sectionTitle {
+  font-size: 4rem;
+  font-weight: bold;
+  margin-bottom: 7rem;
+  position: relative;
+}
+
+.sectionTitle::after {
+  content: '';
+  position: absolute;
+  bottom: -2rem;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 6rem;
+  height: 0.4rem;
+  background-color: red;
+}
+
+.speakerGrid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.speaker {
+  position: relative;
+  overflow: hidden;
+}
+
+.speaker img {
+  width: 100%;
+  height: auto;
+  display: block;
+  transition: transform 0.3s ease;
+}
+
+.speaker:hover img {
+  transform: scale(1.05);
+}
+
+.speakerOverlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 10px;
+  color: white;
+  opacity: 1;
+  transition: transform 0.3s ease;
+  background-color: rgba(0, 0, 0, 0.5); /* Move background color here */
+}
+
+.speaker:hover .speakerOverlay {
+  transform: translateY(-10%);
+  padding-top: 0; /* Remove padding-top on hover */
+}
+
+.speakerOverlay:hover .speakerName,
+.speakerOverlay:hover .speakerOrganization {
+  color: red;
+}
+
+.speakerName {
+  font-size: 20px;
+  margin: 0;
+  transition: transform 0.3s ease;
+}
+
+.speakerOrganization {
+  font-size: 16px;
+  margin: 0;
+  transition: transform 0.3s ease;
+}
+
+.speakerOverlay:hover .speakerName,
+.speakerOverlay:hover .speakerOrganization {
+  transform: translateY(-100%);
+}

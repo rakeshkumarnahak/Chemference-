@@ -1,0 +1,69 @@
+
+.scheduleCard {
+    width: 80%;
+    margin: 0 auto;
+    padding: 2rem;
+    margin-bottom: 10rem;
+    
+  }
+
+   .scheduleCard h2 {
+    text-align: center;
+    font-size: 4rem;
+    font-weight: bold;
+    margin-bottom: 7rem;
+    position: relative;
+  }
+  
+  .scheduleCard h2::after {
+    content: '';
+    position: absolute;
+    bottom: -2rem;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 6rem;
+    height: 0.4rem;
+    background-color: red;
+  }
+  
+  
+  .tableContainer {
+    overflow-x: auto;
+  }
+  
+  .scheduleTable {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  .scheduleTable th,
+  .scheduleTable td {
+    border: 0.1rem solid #ddd; 
+    padding: 0.8rem;
+    text-align: left;
+  }
+  
+  .scheduleTable th {
+    background-color: #f2f2f2;
+  }
+  
+
+  .buttonsContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5rem;
+    gap: 3rem;
+  }
+  
+  .dayButton {
+    padding: 1rem 10rem;
+    border-radius: 5rem;
+    background-color: red;
+    color: white;
+    border: none;
+    margin-right: 10px;
+    cursor: pointer;
+  }
+  
+  

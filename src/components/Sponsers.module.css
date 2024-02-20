@@ -1,0 +1,43 @@
+
+.sponsors {
+    width: 80%;
+    margin: 0 auto;
+    margin-bottom: 10rem; /* 30px */
+  }
+  
+  .sectionTitle {
+    text-align: center;
+    font-size: 4rem;
+    font-weight: bold;
+    margin-bottom: 7rem;
+    position: relative;
+  }
+  
+  .sectionTitle::after {
+    content: '';
+    position: absolute;
+    bottom: -2rem;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 6rem;
+    height: 0.4rem;
+    background-color: red;
+  }
+  
+  .sponsorsGrid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2rem; /* 20px */
+  }
+  
+  .sponsor {
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    overflow: hidden;
+  }
+  
+  .sponsor img {
+    width: 100%;
+    height: auto;
+  }
+  

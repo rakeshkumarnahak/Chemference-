@@ -1,0 +1,76 @@
+.about-wrapper{
+  background-color: #242424;
+  color: white;
+  padding: 4rem 0;
+  margin-bottom: 12rem;
+}
+
+.about-container {
+    display: grid;
+    grid-template-columns: 70% 30%; 
+    width: 75%;
+    margin: 0 auto;
+    gap: 4rem;
+    /* background-color: rgba(9, 14, 32, 0.98); */
+  }
+  
+  .about-event-section,
+  .timeline-section,
+  .important-dates-section,
+  .registration-fees-section {
+    margin-bottom: 2rem; /* Add some spacing between sections */
+  }
+  
+  .timeline-section {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem; /* Add some spacing between subsections */
+  }
+
+  .where{
+    margin-bottom: 2rem;
+  }
+
+  .where h2{
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    font-size: 2rem;
+  }
+
+  .when{
+    margin-bottom: 2rem;
+  }
+
+  .when h2{
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+    font-size: 2rem;
+  }
+  
+  .dates-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem; 
+    column-gap: 0;
+  }
+
+  .dates-image{
+    width: 80%;
+    margin-bottom: 1rem;
+  }
+  
+.about-title{
+    font-size: 3rem;
+    font-weight: 700;
+    margin-bottom: 2rem;
+}
+  
+.important-dates-section h2{
+    margin-bottom: 1rem;
+    color: yellow;
+}
+
+.registration-fees-section h2{
+    margin-bottom: 1rem;
+    color: yellow;
+}

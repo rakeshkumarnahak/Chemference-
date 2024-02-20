@@ -1,0 +1,76 @@
+/* Hero section styling */
+.hero {
+  background-image: url('your-image-url.jpg'); 
+  background-color: #242424;
+  background-size: cover;
+  background-position: center;
+  height: 80vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: white;
+  overflow: hidden;
+}
+
+.heroContent {
+  max-width: 800px;
+  padding: 20px;
+}
+
+.title {
+  color: #fff;
+  font-size: 5.6rem;
+  font-weight: 600;
+  text-transform: none;
+}
+
+.subtitle {
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+  margin-top: 2rem;
+}
+
+.description {
+  font-size: 2rem;
+  margin-bottom: 3rem;
+  font-weight: 600;
+}
+
+.registerBtn {
+  display: inline-block;
+  padding: 1rem 3rem;
+  border: 2px solid red;
+  border-radius:  4rem;
+  background-color: transparent;
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease; 
+  margin-bottom: 8rem;
+}
+
+.registerBtn:hover {
+  background-color: red;
+  color: white; 
+}
+
+.horizontalScroll {
+  font-size: 2.5rem;
+  font-weight: 600;
+  color: yellow;
+  overflow-x: auto;
+  white-space: nowrap;
+  margin-bottom: 20px;
+  animation: scrollAnimation 15s linear infinite; /* Adjust duration and timing function as needed */
+}
+
+@keyframes scrollAnimation {
+  0% {
+    transform: translateX(150%); /* Start from the right end of the screen */
+  }
+  100% {
+    transform: translateX(-150%); /* Move to the left end of the screen */
+  }
+}

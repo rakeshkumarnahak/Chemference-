@@ -1,0 +1,72 @@
+.eventVenue {
+    text-align: center;
+    margin: 0 1rem;
+    margin-bottom: 10rem;
+  }
+
+  .sectionTitle {
+    font-size: 4rem;
+    font-weight: bold;
+    margin-bottom: 7rem;
+    position: relative;
+  }
+  
+  .sectionTitle::after {
+    content: '';
+    position: absolute;
+    bottom: -2rem;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 6rem;
+    height: 0.4rem;
+    background-color: red;
+  }
+  
+  
+  .venueGrid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+  
+  .googleMaps {
+    width: 100%;
+    height: 100%; 
+  }
+
+  .rightGrid{
+    background-color: #242424;
+    color: #f2f2f2;
+    padding: 2rem 0;
+  }
+
+  .rightGrid h3{
+    margin-top: 3rem;
+    font-size: 3rem;
+  }
+  
+  .rightGrid p {
+    font-size: 1.6rem;
+    margin: 3rem 5rem;
+    line-height: 1.8;
+  }
+  
+  .imageGrid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2rem;
+  }
+  
+  .image {
+    overflow: hidden;
+  }
+  
+  .image img {
+    width: 100%;
+    height: auto;
+    transition: transform 0.3s ease;
+  }
+  
+  .image:hover img {
+    transform: scale(1.1);
+  }
+  
